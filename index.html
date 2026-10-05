@@ -1,0 +1,2774 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>MELLALI GROUP — Société de Nettoyage à Rabat, Salé & Témara</title>
+
+    <meta name="description"
+        content="MELLALI GROUP, société de nettoyage professionnel à Rabat, Salé et Témara. Nettoyage de bureaux, copropriétés, fin de chantier, vitres, commerces et désinfection. Demandez votre devis gratuit." />
+
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="MELLALI GROUP — Nettoyage professionnel à Rabat" />
+    <meta property="og:description"
+        content="Solutions de nettoyage professionnel pour entreprises, bureaux, copropriétés, commerces et chantiers." />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        :root {
+            --primary: #0d7a5f;
+            --primary-dark: #075a46;
+            --primary-light: #e9f7f2;
+
+            --dark: #10201b;
+            --dark-2: #18352d;
+            --text: #33433e;
+            --muted: #71807b;
+
+            --white: #ffffff;
+            --light: #f7faf9;
+            --border: #e4ebe8;
+
+            --gold: #c99a4a;
+
+            --shadow: 0 18px 50px rgba(16, 32, 27, 0.10);
+            --radius: 18px;
+
+            --font-title: "Manrope", sans-serif;
+            --font-body: "DM Sans", sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--text);
+            background: var(--white);
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button,
+        input,
+        select,
+        textarea {
+            font-family: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: min(1180px, 92%);
+            margin: auto;
+        }
+
+        /* =========================
+       TOP BAR
+    ========================= */
+
+        .topbar {
+            background: var(--dark);
+            color: #dce9e4;
+            font-size: 13px;
+        }
+
+        .topbar-inner {
+            min-height: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .topbar-left,
+        .topbar-right {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .topbar a:hover {
+            color: #fff;
+        }
+
+        /* =========================
+       NAVBAR
+    ========================= */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(228, 235, 232, 0.8);
+        }
+
+        .nav {
+            min-height: 76px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            font-family: var(--font-title);
+            font-weight: 800;
+            font-size: 21px;
+            letter-spacing: -0.5px;
+            color: var(--dark);
+        }
+
+        .logo-mark {
+            width: 40px;
+            height: 40px;
+            border-radius: 11px;
+            background: var(--primary);
+            display: grid;
+            place-items: center;
+            color: white;
+            font-weight: 800;
+            box-shadow: 0 7px 18px rgba(13, 122, 95, 0.25);
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            list-style: none;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .nav-links a {
+            transition: 0.25s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn {
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 9px;
+            padding: 13px 20px;
+            border-radius: 11px;
+            font-weight: 700;
+            font-size: 14px;
+            transition: 0.25s ease;
+        }
+
+        .btn-primary {
+            color: white;
+            background: var(--primary);
+            box-shadow: 0 8px 22px rgba(13, 122, 95, 0.20);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn-dark {
+            color: white;
+            background: var(--dark);
+        }
+
+        .btn-dark:hover {
+            background: #000;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            color: var(--dark);
+            background: white;
+            border: 1px solid var(--border);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        /* =========================
+       HERO
+    ========================= */
+
+        .hero {
+            position: relative;
+            overflow: hidden;
+            background:
+                linear-gradient(90deg,
+                    rgba(7, 28, 22, 0.96) 0%,
+                    rgba(7, 28, 22, 0.86) 48%,
+                    rgba(7, 28, 22, 0.42) 100%),
+                url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1900&q=85") center/cover;
+            color: white;
+        }
+
+        .hero-inner {
+            min-height: 690px;
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            align-items: center;
+            gap: 70px;
+            padding: 70px 0;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.11);
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            padding: 7px 12px;
+            border-radius: 100px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .eyebrow-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #61d8ad;
+        }
+
+        .hero h1 {
+            font-family: var(--font-title);
+            font-size: clamp(40px, 5vw, 68px);
+            line-height: 1.04;
+            letter-spacing: -2.5px;
+            max-width: 720px;
+            margin-bottom: 24px;
+        }
+
+        .hero h1 span {
+            color: #62d6ae;
+        }
+
+        .hero-text {
+            color: #d3e1dc;
+            font-size: 18px;
+            max-width: 650px;
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 38px;
+        }
+
+        .hero .btn-primary {
+            background: #20a97d;
+        }
+
+        .hero .btn-outline {
+            background: rgba(255, 255, 255, 0.08);
+            color: white;
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+        .hero .btn-outline:hover {
+            background: white;
+            color: var(--dark);
+        }
+
+        .hero-points {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .hero-point {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #e0ece8;
+            font-size: 13px;
+        }
+
+        .check {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: rgba(32, 169, 125, 0.2);
+            color: #64d8b0;
+            display: grid;
+            place-items: center;
+            font-weight: 800;
+        }
+
+        /* =========================
+       QUOTE CARD
+    ========================= */
+
+        .quote-card {
+            background: white;
+            color: var(--text);
+            border-radius: 24px;
+            padding: 30px;
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.20);
+        }
+
+        .quote-card h2 {
+            font-family: var(--font-title);
+            color: var(--dark);
+            font-size: 26px;
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }
+
+        .quote-card>p {
+            color: var(--muted);
+            font-size: 14px;
+            margin-bottom: 22px;
+        }
+
+        .form-group {
+            margin-bottom: 14px;
+        }
+
+        .form-group label {
+            display: block;
+            color: var(--dark);
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .form-control {
+            width: 100%;
+            border: 1px solid var(--border);
+            background: #fbfcfc;
+            border-radius: 10px;
+            padding: 12px 13px;
+            outline: none;
+            font-size: 14px;
+            color: var(--text);
+            transition: 0.2s;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary);
+            background: white;
+            box-shadow: 0 0 0 3px rgba(13, 122, 95, 0.08);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 90px;
+        }
+
+        .quote-submit {
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        .small-note {
+            text-align: center;
+            font-size: 11px;
+            color: #89948f;
+            margin-top: 10px;
+        }
+
+        /* =========================
+       TRUST BAR
+    ========================= */
+
+        .trust-bar {
+            background: white;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .trust-item {
+            padding: 25px 20px;
+            border-right: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .trust-item:last-child {
+            border-right: none;
+        }
+
+        .trust-number {
+            font-family: var(--font-title);
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--dark);
+        }
+
+        .trust-label {
+            color: var(--muted);
+            font-size: 12px;
+            margin-top: 2px;
+        }
+
+        /* =========================
+       SECTIONS
+    ========================= */
+
+        section {
+            padding: 95px 0;
+        }
+
+        .section-head {
+            max-width: 720px;
+            margin-bottom: 45px;
+        }
+
+        .section-label {
+            color: var(--primary);
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            font-family: var(--font-title);
+            font-size: clamp(31px, 4vw, 46px);
+            line-height: 1.1;
+            letter-spacing: -1.4px;
+            color: var(--dark);
+            margin-bottom: 15px;
+        }
+
+        .section-text {
+            color: var(--muted);
+            font-size: 16px;
+        }
+
+        /* =========================
+       SERVICES
+    ========================= */
+
+        .services {
+            background: var(--light);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .service-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 28px;
+            transition: 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow);
+            border-color: rgba(13, 122, 95, 0.2);
+        }
+
+        .service-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: var(--primary-light);
+            color: var(--primary);
+            display: grid;
+            place-items: center;
+            font-size: 23px;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            font-family: var(--font-title);
+            font-size: 19px;
+            color: var(--dark);
+            margin-bottom: 9px;
+        }
+
+        .service-card p {
+            color: var(--muted);
+            font-size: 14px;
+            margin-bottom: 17px;
+        }
+
+        .service-link {
+            color: var(--primary);
+            font-size: 13px;
+            font-weight: 800;
+        }
+
+        /* =========================
+       ABOUT / WHY US
+    ========================= */
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .about-visual {
+            position: relative;
+            min-height: 470px;
+            border-radius: 25px;
+            overflow: hidden;
+            background:
+                linear-gradient(rgba(13, 122, 95, 0.10),
+                    rgba(13, 122, 95, 0.10)),
+                url("https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1000&q=85") center/cover;
+        }
+
+        .floating-card {
+            position: absolute;
+            left: 22px;
+            bottom: 22px;
+            background: white;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            max-width: 250px;
+        }
+
+        .floating-card strong {
+            display: block;
+            font-family: var(--font-title);
+            color: var(--dark);
+            margin-bottom: 5px;
+        }
+
+        .floating-card span {
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        .benefits {
+            display: grid;
+            gap: 18px;
+            margin-top: 28px;
+        }
+
+        .benefit {
+            display: grid;
+            grid-template-columns: 44px 1fr;
+            gap: 15px;
+            align-items: start;
+        }
+
+        .benefit-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: var(--primary-light);
+            display: grid;
+            place-items: center;
+            color: var(--primary);
+            font-weight: 800;
+        }
+
+        .benefit h3 {
+            color: var(--dark);
+            font-family: var(--font-title);
+            font-size: 16px;
+            margin-bottom: 3px;
+        }
+
+        .benefit p {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        /* =========================
+       PROCESS
+    ========================= */
+
+        .process {
+            background: var(--dark);
+            color: white;
+        }
+
+        .process .section-title {
+            color: white;
+        }
+
+        .process .section-text {
+            color: #aebeb9;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .process-card {
+            position: relative;
+            padding: 28px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: 17px;
+        }
+
+        .process-number {
+            font-family: var(--font-title);
+            font-size: 42px;
+            font-weight: 800;
+            color: #3cb88d;
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+
+        .process-card h3 {
+            margin-bottom: 7px;
+            font-size: 17px;
+        }
+
+        .process-card p {
+            color: #aebeb9;
+            font-size: 13px;
+        }
+
+        /* =========================
+       SECTORS
+    ========================= */
+
+        .sectors-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .sector {
+            border: 1px solid var(--border);
+            border-radius: 15px;
+            padding: 22px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: white;
+            transition: 0.2s;
+        }
+
+        .sector:hover {
+            border-color: rgba(13, 122, 95, 0.35);
+            transform: translateX(3px);
+        }
+
+        .sector-icon {
+            width: 48px;
+            height: 48px;
+            flex: 0 0 48px;
+            border-radius: 13px;
+            background: var(--primary-light);
+            display: grid;
+            place-items: center;
+            color: var(--primary);
+            font-size: 21px;
+        }
+
+        .sector h3 {
+            font-family: var(--font-title);
+            color: var(--dark);
+            font-size: 16px;
+            margin-bottom: 3px;
+        }
+
+        .sector p {
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        /* =========================
+       MARKET / PRICES
+    ========================= */
+
+        .market {
+            background: var(--light);
+        }
+
+        .price-table {
+            overflow-x: auto;
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            background: white;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 700px;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 17px 20px;
+            border-bottom: 1px solid var(--border);
+            font-size: 14px;
+        }
+
+        th {
+            background: #f2f7f5;
+            color: var(--dark);
+            font-weight: 800;
+        }
+
+        td {
+            color: var(--muted);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .price {
+            color: var(--primary);
+            font-weight: 800;
+        }
+
+        .market-note {
+            color: var(--muted);
+            font-size: 12px;
+            margin-top: 12px;
+        }
+
+        /* =========================
+       AREAS
+    ========================= */
+
+        .areas {
+            background: white;
+        }
+
+        .areas-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .area {
+            padding: 10px 15px;
+            border: 1px solid var(--border);
+            border-radius: 100px;
+            font-size: 13px;
+            color: var(--dark);
+            background: #fbfcfc;
+        }
+
+        .area strong {
+            color: var(--primary);
+        }
+
+        /* =========================
+       CTA
+    ========================= */
+
+        .cta-section {
+            padding: 70px 0;
+        }
+
+        .cta-box {
+            position: relative;
+            overflow: hidden;
+            background:
+                linear-gradient(120deg,
+                    var(--dark),
+                    var(--dark-2));
+            color: white;
+            border-radius: 28px;
+            padding: 55px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .cta-box::after {
+            content: "";
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: rgba(32, 169, 125, 0.15);
+            right: -80px;
+            top: -120px;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-box h2 {
+            font-family: var(--font-title);
+            font-size: clamp(29px, 4vw, 43px);
+            line-height: 1.1;
+            margin-bottom: 10px;
+        }
+
+        .cta-box p {
+            color: #b9c9c3;
+            max-width: 600px;
+        }
+
+        .cta-actions {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        /* =========================
+       FAQ
+    ========================= */
+
+        .faq-list {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        details {
+            border-bottom: 1px solid var(--border);
+            padding: 20px 0;
+        }
+
+        summary {
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            color: var(--dark);
+            font-family: var(--font-title);
+            font-weight: 700;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: "+";
+            color: var(--primary);
+            font-size: 22px;
+        }
+
+        details[open] summary::after {
+            content: "−";
+        }
+
+        details p {
+            padding-top: 12px;
+            color: var(--muted);
+            font-size: 14px;
+            max-width: 750px;
+        }
+
+        /* =========================
+       FOOTER
+    ========================= */
+
+        footer {
+            background: #081611;
+            color: #a9b9b4;
+            padding: 60px 0 25px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr 1fr 1fr;
+            gap: 45px;
+            padding-bottom: 45px;
+        }
+
+        .footer-brand .logo {
+            color: white;
+            margin-bottom: 16px;
+        }
+
+        .footer-brand .logo span {
+            color: #4fc99d;
+        }
+
+        .footer-brand p {
+            font-size: 13px;
+            max-width: 330px;
+            line-height: 1.8;
+        }
+
+        .footer-title {
+            color: white;
+            font-family: var(--font-title);
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .footer-links {
+            list-style: none;
+            display: grid;
+            gap: 9px;
+            font-size: 13px;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            padding-top: 22px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            font-size: 12px;
+        }
+
+        /* =========================
+       FLOATING WHATSAPP
+    ========================= */
+
+        .whatsapp {
+            position: fixed;
+            right: 22px;
+            bottom: 22px;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            background: #20b978;
+            color: white;
+            display: grid;
+            place-items: center;
+            font-size: 25px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+            transition: 0.25s;
+        }
+
+        .whatsapp:hover {
+            transform: scale(1.08);
+        }
+
+        /* =========================
+       ANIMATION
+    ========================= */
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(25px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* =========================
+       RESPONSIVE
+    ========================= */
+
+        @media (max-width: 1000px) {
+            .nav-links {
+                gap: 16px;
+            }
+
+            .hero-inner {
+                grid-template-columns: 1fr;
+            }
+
+            .quote-card {
+                max-width: 600px;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .process-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-visual {
+                min-height: 400px;
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 760px) {
+            .topbar {
+                display: none;
+            }
+
+            .nav {
+                min-height: 67px;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 67px;
+                left: 0;
+                width: 100%;
+                background: white;
+                padding: 20px;
+                flex-direction: column;
+                align-items: flex-start;
+                border-bottom: 1px solid var(--border);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+                display: none;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-actions {
+                display: none;
+            }
+
+            .hero-inner {
+                padding: 55px 0;
+                min-height: auto;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .hero-text {
+                font-size: 16px;
+            }
+
+            .hero-points {
+                display: grid;
+                gap: 10px;
+            }
+
+            .trust-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .trust-item:nth-child(2) {
+                border-right: none;
+            }
+
+            section {
+                padding: 70px 0;
+            }
+
+            .services-grid,
+            .process-grid,
+            .sectors-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-box {
+                padding: 35px 25px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .quote-card {
+                padding: 22px;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .hero-buttons {
+                display: grid;
+            }
+
+            .about-visual {
+                min-height: 330px;
+            }
+
+            .cta-actions {
+                width: 100%;
+            }
+
+            .cta-actions .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+       TOP BAR
+  ========================== -->
+
+    <div class="topbar">
+        <div class="container topbar-inner">
+
+            <div class="topbar-left">
+                <span>✓ Nettoyage professionnel</span>
+                <span>✓ Devis gratuit</span>
+                <span>✓ Rabat • Salé • Témara</span>
+            </div>
+
+            <div class="topbar-right">
+                <a href="#contact">Demander un devis</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- =========================
+       HEADER
+  ========================== -->
+
+    <header>
+
+        <div class="container nav">
+
+            <a href="#" class="logo">
+                <div class="logo-mark">M</div>
+                MELLALI <span>GROUP</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pourquoi">Pourquoi nous</a></li>
+                <li><a href="#process">Comment ça marche</a></li>
+                <li><a href="#zones">Zones</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary">
+                    Devis gratuit
+                </a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- =========================
+       HERO
+  ========================== -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="container hero-inner">
+
+                <div>
+
+                    <div class="eyebrow">
+                        <span class="eyebrow-dot"></span>
+                        Société de nettoyage professionnel
+                    </div>
+
+                    <h1>
+                        Un environnement
+                        <span>propre.</span>
+                        Une image professionnelle.
+                    </h1>
+
+                    <p class="hero-text">
+                        MELLALI GROUP accompagne les entreprises, copropriétés,
+                        commerces et particuliers avec des solutions de nettoyage
+                        adaptées à chaque besoin à Rabat, Salé et Témara.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#contact" class="btn btn-primary">
+                            Demander un devis →
+                        </a>
+
+                        <a href="#services" class="btn btn-outline">
+                            Découvrir nos services
+                        </a>
+
+                    </div>
+
+                    <div class="hero-points">
+
+                        <div class="hero-point">
+                            <span class="check">✓</span>
+                            Équipe professionnelle
+                        </div>
+
+                        <div class="hero-point">
+                            <span class="check">✓</span>
+                            Matériel adapté
+                        </div>
+
+                        <div class="hero-point">
+                            <span class="check">✓</span>
+                            Intervention ponctuelle ou régulière
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- QUOTE FORM -->
+
+                <div class="quote-card" id="contact">
+
+                    <h2>Demandez votre devis</h2>
+
+                    <p>
+                        Décrivez votre besoin. Nous vous recontactons pour
+                        préparer une proposition adaptée.
+                    </p>
+
+                    <form id="quoteForm">
+
+                        <div class="form-group">
+                            <label for="name">Nom / Société *</label>
+
+                            <input class="form-control" type="text" id="name" placeholder="Votre nom ou société"
+                                required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Téléphone *</label>
+
+                            <input class="form-control" type="tel" id="phone" placeholder="06 XX XX XX XX" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service recherché *</label>
+
+                            <select class="form-control" id="service" required>
+
+                                <option value="">
+                                    Choisir un service
+                                </option>
+
+                                <option>
+                                    Nettoyage de bureaux
+                                </option>
+
+                                <option>
+                                    Nettoyage de copropriété
+                                </option>
+
+                                <option>
+                                    Fin de chantier
+                                </option>
+
+                                <option>
+                                    Nettoyage de maison / villa
+                                </option>
+
+                                <option>
+                                    Vitres & façades
+                                </option>
+
+                                <option>
+                                    Désinfection / hygiène
+                                </option>
+
+                                <option>
+                                    Nettoyage commerce / restaurant
+                                </option>
+
+                                <option>
+                                    Autre
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="surface">
+                                Surface approximative
+                            </label>
+
+                            <input class="form-control" type="text" id="surface" placeholder="Ex : 200 m²" />
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Votre besoin
+                            </label>
+
+                            <textarea class="form-control" id="message"
+                                placeholder="Décrivez rapidement votre besoin..."></textarea>
+
+                        </div>
+
+                        <button type="submit" class="btn btn-primary quote-submit">
+                            Envoyer ma demande →
+                        </button>
+
+                        <p class="small-note">
+                            Gratuit • Sans engagement
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+         TRUST
+    ========================== -->
+
+        <div class="trust-bar">
+
+            <div class="container trust-grid">
+
+                <div class="trust-item">
+                    <div class="trust-number">Rabat</div>
+                    <div class="trust-label">Zone principale</div>
+                </div>
+
+                <div class="trust-item">
+                    <div class="trust-number">3</div>
+                    <div class="trust-label">Zones couvertes</div>
+                </div>
+
+                <div class="trust-item">
+                    <div class="trust-number">7j/7</div>
+                    <div class="trust-label">Disponibilité à définir</div>
+                </div>
+
+                <div class="trust-item">
+                    <div class="trust-number">100%</div>
+                    <div class="trust-label">Solution personnalisée</div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+         SERVICES
+    ========================== -->
+
+        <section class="services" id="services">
+
+            <div class="container">
+
+                <div class="section-head reveal">
+
+                    <div class="section-label">
+                        Nos prestations
+                    </div>
+
+                    <h2 class="section-title">
+                        Une solution de nettoyage pour chaque besoin.
+                    </h2>
+
+                    <p class="section-text">
+                        De l'entretien quotidien à la remise en état,
+                        MELLALI GROUP adapte son intervention à votre espace,
+                        votre activité et votre fréquence.
+                    </p>
+
+                </div>
+
+
+                <div class="services-grid">
+
+                    <article class="service-card reveal">
+
+                        <div class="service-icon">🏢</div>
+
+                        <h3>Nettoyage de bureaux</h3>
+
+                        <p>
+                            Entretien quotidien ou périodique des bureaux,
+                            open spaces, cabinets et espaces professionnels.
+                        </p>
+
+                        <a href="#contact" class="service-link">
+                            Demander un devis →
+                        </a>
+
+                    </article>
+
+
+                    <article class="service-card reveal">
+
+                        <div class="service-icon">🏗️</div>
+
+                        <h3>Fin de chantier</h3>
+
+                        <p>
+                            Nettoyage et remise en état après travaux,
+                            construction, rénovation ou aménagement.
+                        </p>
+
+                        <a href="#contact" class="service-link">
+                            Demander un devis →
+                        </a>
+
+                    </article>
+
+
+                    <article class="service-card reveal">
+
+                        <div class="service-icon">🏘️</div>
+
+                        <h3>Copropriétés</h3>
+
+                        <p>
+                            Entretien des halls, escaliers, couloirs,
+                            parties communes et espaces collectifs.
+                        </p>
+
+                        <a href="#contact" class="service-link">
+                            Demander un devis →
+                        </a>
+
+                    </article>
+
+
+                    <article class="service-card reveal">
+
+                        <div class="service-icon">🪟</div>
+
+                        <h3>Vitres & façades</h3>
+
+                        <p>
+                            Nettoyage des vitrages, vitrines et surfaces
+                            accessibles selon les contraintes du site.
+                        </p>
+
+                        <a href="#contact" class="service-link">
+                            Demander un devis →
+                        </a>
+
+                    </article>
+
+
+                    <article class="service-card reveal">
+
+                        <div class="service-icon">🛍️</div>
+
+                        <h3>Commerces & restaurants</h3>
+
+                        <p>
+                            Nettoyage avant ouverture, après fermeture
+                            ou selon la fréquence adaptée à votre activité.
+                        </p>
+
+                        <a href="#contact" class="service-link">
+                            Demander un devis →
+                        </a>
+
+                    </article>
+
+
+                    <article class="service-card reveal">
+
+                        <div class="service-icon">🧴</div>
+
+                        <h3>Hygiène & désinfection</h3>
+
+                        <p>
+                            Prestations complémentaires pour renforcer
+                            l'hygiène de vos espaces professionnels.
+                        </p>
+
+                        <a href="#contact" class="service-link">
+                            Demander un devis →
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+         WHY MELLALI GROUP
+    ========================== -->
+
+        <section id="pourquoi">
+
+            <div class="container why-grid">
+
+                <div class="about-visual reveal">
+
+                    <div class="floating-card">
+
+                        <strong>MELLALI GROUP</strong>
+
+                        <span>
+                            Nettoyage professionnel
+                            à Rabat, Salé & Témara
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="reveal">
+
+                    <div class="section-label">
+                        Pourquoi MELLALI GROUP
+                    </div>
+
+                    <h2 class="section-title">
+                        Plus qu'un nettoyage :
+                        un service organisé.
+                    </h2>
+
+                    <p class="section-text">
+                        Notre objectif est simple : vous permettre de
+                        travailler ou vivre dans un environnement propre,
+                        entretenu et agréable sans avoir à gérer toute
+                        la logistique du nettoyage.
+                    </p>
+
+
+                    <div class="benefits">
+
+                        <div class="benefit">
+
+                            <div class="benefit-icon">
+                                ✓
+                            </div>
+
+                            <div>
+
+                                <h3>Intervention organisée</h3>
+
+                                <p>
+                                    Planning et fréquence définis selon
+                                    vos besoins.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="benefit">
+
+                            <div class="benefit-icon">
+                                ✓
+                            </div>
+
+                            <div>
+
+                                <h3>Matériel adapté</h3>
+
+                                <p>
+                                    Produits et équipements choisis
+                                    selon les surfaces à traiter.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="benefit">
+
+                            <div class="benefit-icon">
+                                ✓
+                            </div>
+
+                            <div>
+
+                                <h3>Devis transparent</h3>
+
+                                <p>
+                                    Le périmètre de la prestation est
+                                    défini avant l'intervention.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="benefit">
+
+                            <div class="benefit-icon">
+                                ✓
+                            </div>
+
+                            <div>
+
+                                <h3>Solutions professionnelles</h3>
+
+                                <p>
+                                    Ponctuel, régulier ou après chantier :
+                                    nous adaptons la prestation.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+         PROCESS
+    ========================== -->
+
+        <section class="process" id="process">
+
+            <div class="container">
+
+                <div class="section-head reveal">
+
+                    <div class="section-label">
+                        Notre méthode
+                    </div>
+
+                    <h2 class="section-title">
+                        Simple, clair et professionnel.
+                    </h2>
+
+                    <p class="section-text">
+                        Nous avons conçu le parcours pour que vous
+                        puissiez obtenir rapidement une solution adaptée.
+                    </p>
+
+                </div>
+
+
+                <div class="process-grid">
+
+                    <div class="process-card reveal">
+
+                        <div class="process-number">
+                            01
+                        </div>
+
+                        <h3>Votre demande</h3>
+
+                        <p>
+                            Vous nous expliquez votre besoin,
+                            votre surface et votre fréquence.
+                        </p>
+
+                    </div>
+
+
+                    <div class="process-card reveal">
+
+                        <div class="process-number">
+                            02
+                        </div>
+
+                        <h3>Évaluation</h3>
+
+                        <p>
+                            Nous analysons les contraintes et,
+                            si nécessaire, organisons une visite.
+                        </p>
+
+                    </div>
+
+
+                    <div class="process-card reveal">
+
+                        <div class="process-number">
+                            03
+                        </div>
+
+                        <h3>Devis</h3>
+
+                        <p>
+                            Vous recevez une proposition adaptée
+                            au périmètre de la prestation.
+                        </p>
+
+                    </div>
+
+
+                    <div class="process-card reveal">
+
+                        <div class="process-number">
+                            04
+                        </div>
+
+                        <h3>Intervention</h3>
+
+                        <p>
+                            L'équipe intervient selon le planning
+                            et les conditions convenues.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+         SECTORS
+    ========================== -->
+
+        <section>
+
+            <div class="container">
+
+                <div class="section-head reveal">
+
+                    <div class="section-label">
+                        Pour qui ?
+                    </div>
+
+                    <h2 class="section-title">
+                        Des prestations pour les professionnels et les particuliers.
+                    </h2>
+
+                    <p class="section-text">
+                        Nous adaptons notre organisation au type de site
+                        et au niveau d'entretien recherché.
+                    </p>
+
+                </div>
+
+
+                <div class="sectors-grid">
+
+                    <div class="sector reveal">
+
+                        <div class="sector-icon">
+                            🏢
+                        </div>
+
+                        <div>
+
+                            <h3>Entreprises & bureaux</h3>
+
+                            <p>
+                                Entretien régulier des espaces de travail.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="sector reveal">
+
+                        <div class="sector-icon">
+                            🏘️
+                        </div>
+
+                        <div>
+
+                            <h3>Syndics & copropriétés</h3>
+
+                            <p>
+                                Parties communes et entretien périodique.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="sector reveal">
+
+                        <div class="sector-icon">
+                            🏗️
+                        </div>
+
+                        <div>
+
+                            <h3>Promoteurs & BTP</h3>
+
+                            <p>
+                                Remise en état après construction ou rénovation.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="sector reveal">
+
+                        <div class="sector-icon">
+                            🛒
+                        </div>
+
+                        <div>
+
+                            <h3>Commerces & restaurants</h3>
+
+                            <p>
+                                Nettoyage adapté aux horaires d'activité.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="sector reveal">
+
+                        <div class="sector-icon">
+                            🏠
+                        </div>
+
+                        <div>
+
+                            <h3>Maisons & villas</h3>
+
+                            <p>
+                                Grand nettoyage ponctuel et entretien.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="sector reveal">
+
+                        <div class="sector-icon">
+                            🏨
+                        </div>
+
+                        <div>
+
+                            <h3>Hôtels & locations</h3>
+
+                            <p>
+                                Nettoyage des espaces selon vos besoins.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+         MARKET PRICES
+    ========================== -->
+
+        <section class="market">
+
+            <div class="container">
+
+                <div class="section-head reveal">
+
+                    <div class="section-label">
+                        Repères tarifaires
+                    </div>
+
+                    <h2 class="section-title">
+                        Des tarifs construits selon la prestation.
+                    </h2>
+
+                    <p class="section-text">
+                        Les prix ci-dessous sont uniquement des repères
+                        indicatifs du marché à Rabat. MELLALI GROUP établit
+                        ses propres devis selon la surface, la fréquence,
+                        l'état des lieux et les contraintes.
+                    </p>
+
+                </div>
+
+
+                <div class="price-table reveal">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>Prestation</th>
+                                <th>Repère marché</th>
+                                <th>Unité</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    Agent de propreté
+                                </td>
+
+                                <td class="price">
+                                    65 – 100 DH
+                                </td>
+
+                                <td>
+                                    / heure facturée
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Grand nettoyage logement
+                                </td>
+
+                                <td class="price">
+                                    1 800 – 3 200 DH
+                                </td>
+
+                                <td>
+                                    environ 100 m²
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Remise en état après travaux
+                                </td>
+
+                                <td class="price">
+                                    22 – 40 DH
+                                </td>
+
+                                <td>
+                                    / m²
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Bureaux avec passage régulier
+                                </td>
+
+                                <td class="price">
+                                    2 500 – 4 000 DH
+                                </td>
+
+                                <td>
+                                    / mois*
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Parties communes
+                                </td>
+
+                                <td class="price">
+                                    1 500 – 2 800 DH
+                                </td>
+
+                                <td>
+                                    / mois*
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <p class="market-note">
+                    * Repères indicatifs du marché à Rabat, non contractuels.
+                    Le devis final dépend de la complexité et du périmètre.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+         AREAS
+    ========================== -->
+
+        <section class="areas" id="zones">
+
+            <div class="container">
+
+                <div class="section-head reveal">
+
+                    <div class="section-label">
+                        Zones d'intervention
+                    </div>
+
+                    <h2 class="section-title">
+                        MELLALI GROUP à Rabat, Salé & Témara.
+                    </h2>
+
+                    <p class="section-text">
+                        Nous ciblons en priorité Rabat et sa région.
+                        Pour les projets plus éloignés, contactez-nous
+                        afin de vérifier la possibilité d'intervention.
+                    </p>
+
+                </div>
+
+
+                <div class="areas-grid reveal">
+
+                    <div class="area">
+                        <strong>Rabat</strong>
+                    </div>
+
+                    <div class="area">
+                        Agdal
+                    </div>
+
+                    <div class="area">
+                        Hay Riad
+                    </div>
+
+                    <div class="area">
+                        Souissi
+                    </div>
+
+                    <div class="area">
+                        Hassan
+                    </div>
+
+                    <div class="area">
+                        Océan
+                    </div>
+
+                    <div class="area">
+                        Yacoub El Mansour
+                    </div>
+
+                    <div class="area">
+                        <strong>Salé</strong>
+                    </div>
+
+                    <div class="area">
+                        <strong>Témara</strong>
+                    </div>
+
+                    <div class="area">
+                        Hay Nahda
+                    </div>
+
+                    <div class="area">
+                        Harhoura
+                    </div>
+
+                    <div class="area">
+                        Skhirat
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+         CTA
+    ========================== -->
+
+        <section class="cta-section">
+
+            <div class="container">
+
+                <div class="cta-box reveal">
+
+                    <div class="cta-content">
+
+                        <h2>
+                            Besoin d'un nettoyage professionnel ?
+                        </h2>
+
+                        <p>
+                            Décrivez-nous votre besoin et recevez une
+                            proposition adaptée à votre espace.
+                        </p>
+
+                    </div>
+
+                    <div class="cta-actions">
+
+                        <a href="#contact" class="btn btn-primary">
+                            Demander un devis
+                        </a>
+
+                        <a href="#" class="btn btn-outline whatsapp-link">
+                            WhatsApp
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+         FAQ
+    ========================== -->
+
+        <section id="faq">
+
+            <div class="container">
+
+                <div class="section-head reveal">
+
+                    <div class="section-label">
+                        FAQ
+                    </div>
+
+                    <h2 class="section-title">
+                        Questions fréquentes.
+                    </h2>
+
+                    <p class="section-text">
+                        Quelques réponses avant votre demande de devis.
+                    </p>
+
+                </div>
+
+
+                <div class="faq-list">
+
+                    <details class="reveal">
+
+                        <summary>
+                            Est-ce que vous proposez des contrats réguliers ?
+                        </summary>
+
+                        <p>
+                            Oui. MELLALI GROUP peut organiser des prestations
+                            ponctuelles ou régulières selon vos besoins,
+                            notamment pour les bureaux, commerces et copropriétés.
+                        </p>
+
+                    </details>
+
+
+                    <details class="reveal">
+
+                        <summary>
+                            Faites-vous le nettoyage après chantier ?
+                        </summary>
+
+                        <p>
+                            Oui. Nous pouvons intervenir pour la remise en
+                            état après travaux, rénovation ou construction.
+                            Le devis dépend notamment de la surface et de l'état du site.
+                        </p>
+
+                    </details>
+
+
+                    <details class="reveal">
+
+                        <summary>
+                            Comment est calculé le prix ?
+                        </summary>
+
+                        <p>
+                            Le tarif dépend principalement de la surface,
+                            du type de prestation, de la fréquence, de l'état
+                            des lieux et des contraintes particulières du site.
+                        </p>
+
+                    </details>
+
+
+                    <details class="reveal">
+
+                        <summary>
+                            Intervenez-vous à Témara et Salé ?
+                        </summary>
+
+                        <p>
+                            Oui, MELLALI GROUP cible Rabat, Salé et Témara.
+                            Pour une intervention plus éloignée, contactez-nous
+                            pour vérifier la disponibilité.
+                        </p>
+
+                    </details>
+
+
+                    <details class="reveal">
+
+                        <summary>
+                            Peut-on demander une visite avant le devis ?
+                        </summary>
+
+                        <p>
+                            Pour les surfaces importantes ou les prestations
+                            complexes, une visite peut être organisée afin de
+                            définir précisément le périmètre de la prestation.
+                        </p>
+
+                    </details>
+
+
+                    <details class="reveal">
+
+                        <summary>
+                            Comment demander un devis ?
+                        </summary>
+
+                        <p>
+                            Remplissez le formulaire en haut de la page.
+                            Votre demande sera préparée automatiquement dans
+                            WhatsApp afin de faciliter le contact.
+                        </p>
+
+                    </details>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+       FOOTER
+  ========================== -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+
+                    <a href="#" class="logo">
+
+                        <div class="logo-mark">
+                            M
+                        </div>
+
+                        MELLALI <span>GROUP</span>
+
+                    </a>
+
+                    <p>
+                        Société de nettoyage professionnel pour entreprises,
+                        copropriétés, commerces, chantiers et particuliers
+                        à Rabat, Salé et Témara.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <div class="footer-title">
+                        Services
+                    </div>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="#services">
+                                Nettoyage bureaux
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#services">
+                                Fin de chantier
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#services">
+                                Copropriétés
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#services">
+                                Vitres & façades
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <div class="footer-title">
+                        Entreprises
+                    </div>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="#pourquoi">
+                                Pourquoi nous
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#process">
+                                Notre méthode
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#faq">
+                                FAQ
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#contact">
+                                Demander un devis
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <div class="footer-title">
+                        Contact
+                    </div>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            Rabat – Maroc
+                        </li>
+
+                        <li>
+                            Salé – Témara
+                        </li>
+
+                        <li>
+                            <a href="#contact">
+                                WhatsApp
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#contact">
+                                Demande de devis
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <span>
+                    © <span id="year"></span> MELLALI GROUP. Tous droits réservés.
+                </span>
+
+                <span>
+                    Nettoyage professionnel — Rabat • Salé • Témara
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+       FLOATING WHATSAPP
+  ========================== -->
+
+    <a href="#" class="whatsapp whatsapp-link" aria-label="Contacter MELLALI GROUP sur WhatsApp">
+        ☎
+    </a>
+
+
+    <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+
+    <script>
+
+        /*
+        =========================================================
+        IMPORTANT
+        =========================================================
+    
+        بدّل هاد الرقم برقم WhatsApp ديالك.
+    
+        مثال:
+        const WHATSAPP_NUMBER = "212612345678";
+    
+        ما تكتبش + وما تكتبش spaces.
+    
+        =========================================================
+        */
+
+        const WHATSAPP_NUMBER = "2126XXXXXXXX";
+
+
+        /* =========================
+           MOBILE MENU
+        ========================== */
+
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.getElementById("navLinks");
+
+        menuToggle.addEventListener("click", () => {
+
+            navLinks.classList.toggle("active");
+
+        });
+
+
+        document.querySelectorAll(".nav-links a").forEach(link => {
+
+            link.addEventListener("click", () => {
+
+                navLinks.classList.remove("active");
+
+            });
+
+        });
+
+
+        /* =========================
+           YEAR
+        ========================== */
+
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+
+        /* =========================
+           WHATSAPP FUNCTION
+        ========================== */
+
+        function openWhatsApp(message = "") {
+
+            if (WHATSAPP_NUMBER.includes("X")) {
+
+                alert(
+                    "بدّل WHATSAPP_NUMBER داخل code برقم WhatsApp ديالك قبل الاستعمال."
+                );
+
+                return;
+
+            }
+
+            const url =
+                "https://wa.me/" +
+                WHATSAPP_NUMBER +
+                "?text=" +
+                encodeURIComponent(message);
+
+            window.open(url, "_blank");
+
+        }
+
+
+        /* =========================
+           WHATSAPP BUTTONS
+        ========================== */
+
+        document.querySelectorAll(".whatsapp-link").forEach(link => {
+
+            link.addEventListener("click", function (e) {
+
+                e.preventDefault();
+
+                openWhatsApp(
+                    "Bonjour MELLALI GROUP 👋\n\n" +
+                    "Je souhaite obtenir un devis pour une prestation de nettoyage.\n\n" +
+                    "Pouvez-vous me renseigner ?"
+                );
+
+            });
+
+        });
+
+
+        /* =========================
+           QUOTE FORM
+        ========================== */
+
+        const quoteForm = document.getElementById("quoteForm");
+
+        quoteForm.addEventListener("submit", function (e) {
+
+            e.preventDefault();
+
+            const name =
+                document.getElementById("name").value.trim();
+
+            const phone =
+                document.getElementById("phone").value.trim();
+
+            const service =
+                document.getElementById("service").value;
+
+            const surface =
+                document.getElementById("surface").value.trim();
+
+            const message =
+                document.getElementById("message").value.trim();
+
+
+            const whatsappMessage =
+
+                "Bonjour MELLALI GROUP 👋\n\n" +
+
+                "📋 DEMANDE DE DEVIS\n\n" +
+
+                "👤 Nom / Société : " +
+                name +
+                "\n\n" +
+
+                "📞 Téléphone : " +
+                phone +
+                "\n\n" +
+
+                "🧹 Service : " +
+                service +
+                "\n\n" +
+
+                "📐 Surface : " +
+                (surface || "Non précisée") +
+                "\n\n" +
+
+                "📝 Besoin : " +
+                (message || "Non précisé") +
+                "\n\n" +
+
+                "Merci.";
+
+            openWhatsApp(whatsappMessage);
+
+        });
+
+
+        /* =========================
+           SCROLL REVEAL
+        ========================== */
+
+        const revealElements =
+            document.querySelectorAll(".reveal");
+
+
+        const observer =
+            new IntersectionObserver(
+
+                (entries) => {
+
+                    entries.forEach(entry => {
+
+                        if (entry.isIntersecting) {
+
+                            entry.target.classList.add("visible");
+
+                            observer.unobserve(entry.target);
+
+                        }
+
+                    });
+
+                },
+
+                {
+                    threshold: 0.12
+                }
+
+            );
+
+
+        revealElements.forEach(element => {
+
+            observer.observe(element);
+
+        });
+
+
+    </script>
+
+
+    <!-- =========================
+       BASIC SEO STRUCTURED DATA
+  ========================== -->
+
+    <script type="application/ld+json">
+
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+
+    "name": "MELLALI GROUP",
+
+    "description":
+      "Société de nettoyage professionnel à Rabat, Salé et Témara.",
+
+    "areaServed": [
+      "Rabat",
+      "Salé",
+      "Témara"
+    ],
+
+    "serviceType": [
+      "Nettoyage professionnel",
+      "Nettoyage de bureaux",
+      "Nettoyage fin de chantier",
+      "Nettoyage de copropriétés",
+      "Nettoyage de vitres",
+      "Désinfection"
+    ]
+  }
+
+  </script>
+
+</body>
+
+</html>
